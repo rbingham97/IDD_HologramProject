@@ -7,10 +7,10 @@ This project is to construct a desktop hologram using the Pepper's Ghost optical
 
 I have already ordered all the parts (except the face tracking camera), and the links are below:
 
-![Mic](https://www.bhphotovideo.com/c/product/753984-REG/CAD_U9_U9_USB_Omnidirectional_Microphone.html/?ap=y&ap=y&smp=y&smp=y&lsft=BI%3A514&gclid=Cj0KCQjwit_8BRCoARIsAIx3Rj5i8v2IneaH23_L43NfhiuR1F_kObbOOEiD-pONl-GnGrsYWOwVGwYaApNEEALw_wcB)
+[Mic](https://www.bhphotovideo.com/c/product/753984-REG/CAD_U9_U9_USB_Omnidirectional_Microphone.html/?ap=y&ap=y&smp=y&smp=y&lsft=BI%3A514&gclid=Cj0KCQjwit_8BRCoARIsAIx3Rj5i8v2IneaH23_L43NfhiuR1F_kObbOOEiD-pONl-GnGrsYWOwVGwYaApNEEALw_wcB)
 
-!(Screen)[https://www.adafruit.com/product/2353]
+[Screen](https://www.adafruit.com/product/2353)
 
-!(RPi TFT Conversion Kippah)[https://www.adafruit.com/product/2454]
+[RPi TFT Conversion Kippah](https://www.adafruit.com/product/2454)
 
-!(Reflector screen material)[https://www.andymark.com/products/polycarbonate-sheet-0-06-in-thick-24-in-x24-in-clear]
+[Reflector screen material](https://www.andymark.com/products/polycarbonate-sheet-0-06-in-thick-24-in-x24-in-clear)
