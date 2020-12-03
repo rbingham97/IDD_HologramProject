@@ -14,3 +14,12 @@ I have already ordered all the parts (except the face tracking camera), and the 
 [RPi TFT Conversion Kippah](https://www.adafruit.com/product/2454)
 
 [Reflector screen material](https://www.andymark.com/products/polycarbonate-sheet-0-06-in-thick-24-in-x24-in-clear)
+
+
+# Functional Checkoff
+
+I have the hologram display working, as seen in the demo video [here](https://youtu.be/VnmK-LyLPDo).
+
+I'm still working with the Adafruit forums to fix the TFT screen installation, forum post [here](https://forums.adafruit.com/viewtopic.php?f=47&t=171740).
+
+Functional code for voice recognition and asset switching is ready, still making updates for the final version locally on my Pi. 
