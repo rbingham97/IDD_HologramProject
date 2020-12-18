@@ -1,6 +1,6 @@
 # IDD_HologramProject
 
-# Proposal (11/15/20)
+## Proposal (11/15/20)
 
 IDD Final Project - Desktop Hologram
 
@@ -19,7 +19,7 @@ I have already ordered all the parts (except the face tracking camera), and the 
 [Reflector screen material](https://www.andymark.com/products/polycarbonate-sheet-0-06-in-thick-24-in-x24-in-clear)
 
 
-# Functional Checkoff (12/3/20)
+## Functional Checkoff (12/3/20)
 
 I have the hologram display working, as seen in the demo video [here](https://youtu.be/VnmK-LyLPDo).
 
