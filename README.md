@@ -36,7 +36,7 @@ The semester is over, and I've finished most of my original goals for this proje
 
 Done:
 - Pepper's Ghost optical illusion projector, powered by 7" TFT display with breakout board driver
-- UI/UX 3D printed enclosure, with clean integration for brightness dial, button, mic, and cords
+- UI/UX 3D printed enclosure, with clean ports for brightness dial, button, mic, and cords
 - Natively printed enclosure hinge mechanism to allow for easy maintenance and viewing angle adjustment
 - Backlight dimming control design
 - Button press recognition system
