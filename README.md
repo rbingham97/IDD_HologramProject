@@ -1,6 +1,6 @@
 # IDD_HologramProject
 
-# Proposal 
+# Proposal (11/15/20)
 
 IDD Final Project - Desktop Hologram
 
@@ -19,7 +19,7 @@ I have already ordered all the parts (except the face tracking camera), and the 
 [Reflector screen material](https://www.andymark.com/products/polycarbonate-sheet-0-06-in-thick-24-in-x24-in-clear)
 
 
-# Functional Checkoff
+# Functional Checkoff (12/3/20)
 
 I have the hologram display working, as seen in the demo video [here](https://youtu.be/VnmK-LyLPDo).
 
@@ -28,7 +28,7 @@ I'm still working with the Adafruit forums to fix the TFT screen installation, f
 Functional code for voice recognition and asset switching is ready, still making updates for the final version locally on my Pi. 
 
 
-# Final Version (for now)
+# Final Version (12/18/20, for now)
 
 The semester is over, and I've finished most of my original goals for this project, but a couple are still outstanding for future work. I describe my progress for this final deliverable below. 
 
