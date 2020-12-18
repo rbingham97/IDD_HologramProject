@@ -110,4 +110,4 @@ As mentioned in the proposal, I ordered a high quality mic to improve the functi
 
 ## Demo Videos
 
-Demo videos of the system can be found [here](https://youtu.be/VnmK-LyLPDo), [here](https://youtu.be/VnmK-LyLPDo), and [here](https://youtu.be/VnmK-LyLPDo). Let me know if there's anything that's unclear, happy to add more description of various subsystems. 
+Demo videos of the system can be found [here](https://youtu.be/FDSVxvgMs98), [here](https://youtu.be/9yQqr8-FLfo), and [here](https://youtu.be/LeKuV7aqEf4). Let me know if there's anything that's unclear, happy to add more description of various subsystems. 
