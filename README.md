@@ -50,13 +50,13 @@ Not Done:
 ## The Illusion and the Device
 
 <p float="left">
-  <img src="/images/frontView.jpg" width="100" />
-  <img src="/images/backView.jpg" width="100" />
+  <img src="/images/frontView.jpg" width="400" />
+  <img src="/images/backView.jpg" width="400" />
 </p>
 
 The photos above show the device in its final form, and also illustrate that much of the functionality is achieved by attaching an external display to the Pi and holding it in a very specific position relative to a pane of partially reflective plastic. The illusion that creates the hologram effect can be seen below:
 
-<img src="/images/peppers.jpg" width="100" />
+<img src="/images/peppers.jpg" width="500" />
 
 Essentially, the clear plastic reflector tricks the human eye into thinking that there is a floating object made of light behind the reflector when you see only the target image and not the actual surface of the reflector. Since your brain doesn't perceive a solid object (the reflector) in the intervening space, it assumes that the object must exist floating in space. This technique is called the Pepper's Ghost illusion, and was invented in the 1800s and named after the clever stage director who thought of it. 
 
@@ -68,43 +68,43 @@ The physical enclosure for the system is the most complete and successful part o
 
 ### The Base
 
-<img src="/images/baseCAD.png" width="100" />
+<img src="/images/baseCAD.png" width="500" />
 
 The base and electronics enclosure is made of two primary clamshell parts, attached by a custom hinge geometry and secured by a 3D printed dowel. The CAD of these parts can be seen above. Key features include a window for the screen to be glued into, held at a 30 degree angle relative to the ground (this angle number is important later), holes for the mic, activation button, and brightness dial, and outlet holes for the power cables. The bottom part is 0.75" deep and is basically a tray for all the electronics, and the top part is a triangular prism used for setting the screen angle. Importantly, since the top part easily hinges up and can be propped in place, this system allows the user to easily change the up/down optimal viewing angle for the hologram, which would otherwise be very narrow. 
 
 ### The Reflector
 
-<img src="/images/reflectorCAD.png" width="100" />
+<img src="/images/reflectorCAD.png" width="500" />
 
 The reflector interface pieces are just a way to securely hold the reflector at the right angle to make the illusion appear in the correct place and angle. Since the base holds the screen at 30 degrees relative to the ground, the reflector's angle relative to the screen needs to be 30 degrees as well such that when the image is reflected over the plane of the panel, it appears to the viewer's eye as a perfectly vertical image. The large wings of the printed parts also serve to keep the reflector stiff and flat so that the resultant image is not stretched or distorted.
 
 ## What's Inside?
 
-<img src="/images/interiorPic.jpg" width="100" />
+<img src="/images/interiorPic.jpg" width="500" />
 
 The main driver of the system is the Raspberry Pi used in the other course projects. This is the brain of the system, and interfaces with three other major components that handle sub-tasks. 
 
 ### Adafruit HDMI Decoder
 
-<img src="/images/decoderPic.jpg" width="100" />
+<img src="/images/decoderPic.jpg" width="500" />
 
 This Adafruit board is a deceptively complex breakout board that converts the HDMI output of the Pi and formats it for the display's 40-pin input format. It also does the power and digital driving for the display in general, a task that turns out to be far more complex than the Adafruit tutorial for the part would make it seem. Particularly on the power end, this conversion was actually the bulk of the work for this project and took wayyy longer than I thought it would. 
 
 I actually started with an entirely different Adafruit converter board, as mentioned above in my proposal. This part did not work at all, and would always cause the display to show only a white rectangle over the whole area. That part was intended to be an elegant shortcut for the video output task, but to bypass it I switched to the full decoder breakout because it has more exposed and debug-able functionality. Even with this new board, it took me several days of work and talking with David to figure out that the screen going all-white was because it wasn't getting enough power. Turns out that this display is extremely power-hungry, and to work at all needs to be plugged directly into a wall outlet. Adafruit also claims that you can easily dim the display by feeding it PWM into its "Backlight" pin, but I've found that that description is deceptive at best, and actually to dim the screen without it going all-white, one needs to feed the board a very high power supply, regulated by a PWM waveform via transistor. My dimmer functionality that just seeks to regulate the screen with Arduino PWM doesn't work because the Arduino can't supply nearly enough current to power the screen from its PWM pins. The dimmer dial wiring is shown below:
 
-<img src="/images/dimmer.jpg" width="100" />
+<img src="/images/dimmer.jpg" width="500" />
 
 All that said, the final version works for at least 20 minutes before eventually (still) whiting out when plugged into the wall at full brightness via micro-USB. This is functional for now, but the first future work I will tackle will be putting a dedicated power supply into the enclosure and powering the screen with it, regulated by my functional dimmer PWM setup. 
 
 ### Arduino
 
-<img src="/images/arduinoPic.jpg" width="100" />
+<img src="/images/arduinoPic.jpg" width="500" />
 
 My Arduino is included in the enclosure, still on its breadboard, and it handles all the analog electronics connections. The dimmer dial is wired up to pins 6 and 7, exactly as in Lab 2, and the PWM signal is generated from pin 9. The activation button is hooked up with a pulldown resistor to analog pin A5, and to do the power supply future work I'll just insert a transistor into the power supply loop on this same breadboard. The Arduino is running "hologram.ino", included in this repo. All of the functionality is just taking bits of various labs, changing their outputs, and weaving them together into one file, so I won't go too much into the technical details of that work here. 
 
 ### CAD Audio Mic
 
-<img src="/images/mic.jpg" width="100" />
+<img src="/images/mic.jpg" width="500" />
 
 As mentioned in the proposal, I ordered a high quality mic to improve the functionality of the Lab 6 speech recognition code, and this mic works great plug and play. I implemented a really clean UI for this part where it just sticks out of a hole in the casing, and since it's connected to the Pi via USB, this also holds the Pi in place. Not much to discuss here, the speech recognition for now works with the activation button exactly as it did in Lab 6 (see "speechRecog.py"). Future work will involve writing a central hub for the hologram to take in the speech recognition output and display video accordingly. I didn't get to this task, but will likely work with Ilan's suggestion to use a Kiosk mode browser window. 
 
