@@ -104,7 +104,7 @@ My Arduino is included in the enclosure, still on its breadboard, and it handles
 
 <img src="/images/mic.jpg" width="100" />
 
-As mentioned in the proposal, I ordered a high quality mic to improve the functionality of the Lab 6 speech recognition code, and this mic works great plug and play. I implemented a really clean UI for this part where it just sticks out of a hole in the casing, and since it's connected to the Pi via USB, this also holds the Pi in place. Not much to discuss here, the speech recognition for now works with the activation button exactly as it did in Lab 6. Future work will involve writing a central hub for the hologram to take in the speech recognition output and display video accordingly. I didn't get to this task, but will likely work with Ilan's suggestion to use a Kiosk mode browser window. 
+As mentioned in the proposal, I ordered a high quality mic to improve the functionality of the Lab 6 speech recognition code, and this mic works great plug and play. I implemented a really clean UI for this part where it just sticks out of a hole in the casing, and since it's connected to the Pi via USB, this also holds the Pi in place. Not much to discuss here, the speech recognition for now works with the activation button exactly as it did in Lab 6 (see "speechRecog.py"). Future work will involve writing a central hub for the hologram to take in the speech recognition output and display video accordingly. I didn't get to this task, but will likely work with Ilan's suggestion to use a Kiosk mode browser window. 
 
 ## Demo Videos
 
